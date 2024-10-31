@@ -49,7 +49,8 @@ function App() {
             <Square value = { num[9] } frozen = { frozen[9] } onClick={ (): void => toggleFreeze(9)  } isWin= {isWin}  />
         </div>
         <div className="board-row-Gen">
-            <button className="button-gen" onClick={handleOnClick} disabled={isWin}>Click to generate new number!</button>
+            {!isWin && (<button className="button-gen" onClick={handleOnClick} disabled={isWin}>Click to generate new
+                number!</button>)}
             {isWin && (<button className="button-gen-reset" onClick={(): void => window.location.reload()}>Reset</button>)}
             <p className="p-gen">Rolls: {count}</p>
         </div>
