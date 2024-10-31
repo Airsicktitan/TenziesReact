@@ -20,7 +20,7 @@ function App() {
         setNum(newNumbs);
         setCount(count + 1);
 
-        if(newNumbs.every((x) => x === 1)) setIsWin(true);
+        if(newNumbs.every((x: number): x is 1 => x === 1)) setIsWin(true);
     }
 
     const toggleFreeze:(index: number) => void = (index: number): void => {
