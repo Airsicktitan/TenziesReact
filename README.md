@@ -1,4 +1,4 @@
-Tenzies game!  The goal is to get a sum of ten in the least amount of rolls possible!
+Tenzies game!  The goal is to get a sum of ten in the least amount of rolls possible! You select (freeze) the square that contains the number one by clicking on it. You can freeze any square, so be sure it's the number 1!
 
 Tenzies Game Start:
 ![Tenzie Game Start](https://github.com/user-attachments/assets/798f5819-ad86-4d53-8bc2-1f55615ad61c)
