@@ -1,9 +1,6 @@
 import './App.css'
 import {useState} from "react";
 import ReactConfetti from "react-confetti";
-import {Simulate} from "react-dom/test-utils";
-import play = Simulate.play;
-import {map} from "react-confetti/dist/types/utils";
 
 function App() {
     const randomNum:(min: number, max: number) => number = (min: number, max: number): number => {
@@ -25,7 +22,7 @@ function App() {
         setNum(newNumbs);
         setCount(count + 1);
 
-        if(newNumbs.every((x) => x === playerNumber)) setIsWin(true);
+        if(newNumbs.every((x: number): boolean => x === playerNumber)) setIsWin(true);
     }
 
     const toggleFreeze:(index: number) => void = (index: number): void => {
@@ -33,13 +30,12 @@ function App() {
 
         setFrozen(frozen.map((freeze: number, i: number): any => (i === index ? !freeze : freeze)));
     }
-    const handleSquareClick = (index: number): void => {
+    const handleSquareClick  = (index: number): void => {
         if(isSelected) {
             setPlayerNumber(num[index])
             toggleFreeze(index)
 
             setIsSelected(false);
-            console.log(playerNumber);
         }
         else {
             toggleFreeze(index);
@@ -51,7 +47,7 @@ function App() {
         <h1>Tenzies Game!</h1>
         <p>Select a number and get all ten squares to match!</p>
         <div className="board-row">
-            {num.map((n, index) => (
+            {num.map((n: number, index: number) => (
                 <Square
                     key={index}
                     value = {n}
