@@ -1,50 +1,10 @@
-# React + TypeScript + Vite
+Tenzies game!  The goal is to get a sum of ten in the least amount of rolls possible! You select (freeze) the square that contains the number one by clicking on it. You can freeze any square, so be sure it's the number 1!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tenzies Game Start:
+![Tenzie Game Start](https://github.com/user-attachments/assets/798f5819-ad86-4d53-8bc2-1f55615ad61c)
 
-Currently, two official plugins are available:
+Tenzies Game In Progress:
+![Tenzie Game In Progress](https://github.com/user-attachments/assets/9e2d9a79-21d5-4797-acdd-d9db3911f05d)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Tenzies Game Is Won:
+![Tenzie Game Is Won](https://github.com/user-attachments/assets/67173f8e-0b7a-4361-9602-58930e6fd41d)
